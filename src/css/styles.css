@@ -3,18 +3,115 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Alkatra', cursive;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
 }
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.22;
+  color: darkblue;
+}
+
 
 #search-box {
-  font: inherit;
+  font-family: 'Alkatra', cursive;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.22;
   padding: 8px;
-  max-width: 320px;
+  width: 400px;
   margin-bottom: 16px;
+  border-radius: 10px;
+  border: 2px darkblue solid;
+  background-color: beige;
+}
+
+
+#search-box:hover {
+  box-shadow: 0 0 5pt 0.5pt darkblue;
+}
+#search-box:focus {
+  box-shadow: 0 0 5pt 2pt darkblue;
+  outline-width: 0px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.country-list {
+  min-width: 400px;
+}
+
+.country-list-item {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  border: darkblue 1px solid;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background-color: beige;
+}
+
+.country-list-item:hover {
+  box-shadow: 0 0 5pt 0.5pt darkblue;
+}
+
+.country-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: darkblue 1px solid;
+  padding: 20px;
+  background-color: beige;
+  border-radius: 25px;
+  
+}
+
+.country-info-wrapper:hover {
+  box-shadow: 0 0 5pt 0.5pt darkblue;
+}
+
+
+.country-img {
+  margin: auto;
+}
+
+.country-title {
+  text-align: center;
+}
+.country-info-list-item {
+  font-family: 'Alkatra', cursive;
+  font-style: italic;
+  font-size: 18px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border: darkblue 1px solid;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.text-list-item {
+  margin-left: 10px;
+}
+
+.text-list {
+  margin-left: 10px;
 }
